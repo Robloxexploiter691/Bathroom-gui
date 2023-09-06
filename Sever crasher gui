@@ -1,0 +1,46 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Bathroom Hub", HidePremium = false, SaveConfig = true, IntroText = ”Bathroom Hub” , ConfigFolder = "Bathroom Hub"})
+
+OrionLib:MakeNotification({
+	Name = "Heya",
+	Content = "This is a server crasher",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+-
+
+local Tab = Window:MakeTab({
+	Name = "Crash server",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = TutTab:AddSection({
+	Name = "Server crasher"
+})
+Tab:AddButton({
+	Name = "Button!",
+	Callback = function()
+      		print("Loading")
+  	end    
+})
+TutTab:AddToggle({
+	Name = "This is a toggle!",
+	Default = false,
+	Callback = function(Value)
+		print(On)
+	end    
+})
+
+
+
+
+
+
+
+end
+OrionLib:Init()
+
+
+https://replit.com/@Robloxexploite8/Gui?s=app
